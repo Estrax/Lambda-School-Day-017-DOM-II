@@ -3,6 +3,7 @@
 // selectors
 const navItems = document.querySelectorAll('.nav-link');
 const home_p = document.querySelectorAll('p');
+const bus_img = document.querySelector('.intro img');
 
 // helper functions
 
@@ -25,4 +26,9 @@ home_p.forEach(elem => {
         e.target.style.fontWeight = boldParagraphs();
         e.target.style.color = randomizeColor();
     });
+    elem.tabIndex = 1;
+    elem.addEventListener('focus', e => e.target.style.background = randomizeColor());
+    elem.addEventListener('blur', e => e.target.style.background = null);
 });
+
+bus_img.addEventListener('drag', e => e.target.style.opacity = .3);
