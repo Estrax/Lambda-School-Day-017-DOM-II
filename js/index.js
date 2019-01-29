@@ -133,7 +133,7 @@ const preloader = new GSPreloader({
     radius:84, 
     dotSize:25, 
     dotCount:10,
-    colors:["#f00","#0f0","00f","#000","#ff0", "#0ff", "#f0f"],
+    colors:["#f00","#0f0","00f","#ff0", "#0ff", "#f0f"],
     boxOpacity:0,
     boxBorder:"1px solid #AAA",
     animationOffset: 1.8,
